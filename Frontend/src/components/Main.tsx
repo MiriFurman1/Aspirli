@@ -2,7 +2,7 @@ import React from 'react'
 
 function Main() {
   return (
-    <div className="flex justify-center items-center h-[700px] ">
+    <div className="flex justify-center items-center h-[700px] flex-wrap ">
     <img
       src="/main-section.jpg"
       width={300}

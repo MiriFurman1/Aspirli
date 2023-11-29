@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
 return (
-    <div className="bg-mint max-w-screen flex flex-row justify-evenly">
+    <div className="bg-mint max-w-screen flex flex-row justify-evenly flex-wrap">
         <img src="logo.png" alt="logo" width={150}></img>
         <div className="flex flex-row justify-center mt-10">
             <Link to="/" className="p-3">דף הבית</Link>
