@@ -11,6 +11,7 @@ export default {
         'mint': '#64AE7A',
         'green': '#396949',
         'grey': '#F9F9F9',
+        'lightOlive': '#aec6b3'
       },
     },
   },

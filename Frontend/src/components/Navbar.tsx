@@ -11,8 +11,8 @@ return (
             <Link to="/courses" className="p-3">קורסים נוספים</Link>
             <a href="#about" className="p-3">אודות</a>
             <a href="#contact" className="p-3">צור קשר</a>
-            <Link to="/" className="p-3">התחבר</Link>
-            <Link to="/" className="p-3"> הירשם</Link>
+            <Link to="/login" className="p-3">התחבר</Link>
+            <Link to="/Register" className="p-3"> הירשם</Link>
         </div>
     </div>
     );

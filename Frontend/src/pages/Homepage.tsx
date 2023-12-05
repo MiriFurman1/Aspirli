@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 function Homepage() {
   return (
-    <div className="max-w-screen">
+    <div className="w-full min-h-full">
       <Main />
       <About />
       <Contact />

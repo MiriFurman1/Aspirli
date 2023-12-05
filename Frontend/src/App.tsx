@@ -6,11 +6,11 @@ import Courses from "./pages/Courses";
 import Services from "./pages/Services";
 import PersonalArea from "./pages/PersonalArea";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <div className=" min-h-screen max-w-screen">
+    <div className=" min-h-screen h-screen bg-lightOlive">
     <Navbar/>
 
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/services" element={<Services/>}/>
         <Route path="/personalarea" element={<PersonalArea/>}/>
         <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/Register" element={<Register/>} />
       </Routes>
 
     </div>
