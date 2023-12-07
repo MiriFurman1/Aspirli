@@ -29,7 +29,7 @@ function Register() {
   const [validMatch, setValidMatch] = useState<boolean>(false);
   const [matchFocus, setMatchFocus] = useState<boolean>(false);
 
-  const [errMsg, setErrMsg] = useState<string>("");
+  const [errMsg, setErrMsg] = useState<string>('');
   const [success, setSuccess] = useState<boolean>(false);
 
   //sets focus when app loads
@@ -63,7 +63,7 @@ function Register() {
       return;
     }
 
-    try {
+    // try {
     //   const response = await axios.post(
     //     REGISTER_URL,
     //     JSON.stringify({ user, pwd }),
@@ -104,6 +104,7 @@ function Register() {
         </section>
       ) : (
         <section className="w-full max-w-2xl  flex flex-col justify-start p-4 bg-mint">
+          <p ref={errRef} className={errMsg ? "inline" : "hidden"} aria-live="assertive">{errMsg}</p>
           <h1 className="text-3xl text-white mb-4">הירשם</h1>
           <form
             onSubmit={handleSubmit}
