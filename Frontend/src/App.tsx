@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import PersonalArea from "./pages/PersonalArea";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/Register" element={<Register/>} />
       </Routes>
+
+    <Footer/>
 
     </div>
   );

@@ -9,11 +9,11 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-16 bg-blue-200">
-      <div className="container mx-auto text-center">
+    <div id="contact" className="py-16 bg-lightOlive">
+      <div className="container mx-auto text-center ">
         <h2 className="text-3xl font-bold mb-6">צור קשר</h2>
         <div className="flex flex-wrap">
-          <p className="text-blue-800">
+          <p className="text-black">
            לתקלה טכנית חייגו  
             <a href="tel:+972-0546779851"> 054-6779851</a> <br/>
             aspirli29@gmail.com <br/>
@@ -22,7 +22,7 @@ const Contact = () => {
            <a href="https://wa.me/972546779851">https://wa.me/972546779851</a> 
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="mt-8 w-1/3 mx-auto">
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -34,9 +34,10 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full border py-2 px-3"
-                placeholder="Your Name"
+                className="w-full border py-2 px-3 bg-grey bg-opacity-40 p-2 rounded"
+                placeholder="שם"
                 required
+
               />
             </div>
 
@@ -45,14 +46,14 @@ const Contact = () => {
                 htmlFor="email"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Email
+                אימייל
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full border py-2 px-3"
-                placeholder="Your Email"
+                className="w-full border py-2 px-3 bg-grey bg-opacity-40 p-2 rounded"
+                placeholder="אימייל"
                 required
               />
             </div>
@@ -62,22 +63,22 @@ const Contact = () => {
                 htmlFor="message"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Message
+                הודעה
               </label>
               <textarea
                 id="message"
                 name="message"
-                className="w-full border py-2 px-3 h-32 resize-none"
-                placeholder="Your Message"
+                className="w-full border py-2 px-3 h-32 resize-none bg-grey bg-opacity-40 p-2 rounded"
+                placeholder="הודעה"
                 required
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+              className="mt-4 p-2 rounded bg-green text-white disabled:bg-gray-500 hover:bg-mint"
             >
-              Submit
+              שלח הודעה
             </button>
           </form>
         </div>

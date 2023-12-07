@@ -69,7 +69,7 @@ function Login() {
             </p>
         </section>
     ) : (
-        <section className="flex flex-col justify-center items-center p-4 mt-24  bg-mint w-full max-w-xl ">
+        <section className="flex flex-col justify-center items-center p-4 mt-10  bg-mint w-full max-w-2xl">
             <p ref={errRef} className={errMsg ? "inline" : "hidden"} aria-live="assertive">{errMsg}</p>
             <h1 className="text-xl">התחבר</h1>
             <form onSubmit={handleSubmit} className="flex flex-col">
