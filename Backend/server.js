@@ -3,7 +3,8 @@ const session = require('express-session');
 const passport = require('passport');
 const connectToMongoDB = require('./config/db.js');
 const configurePassport = require('./config/passport.js');
-const routes = require('./routes/routes.js')
+const routes = require('./routes/routes.js');
+const cors=require('cors')
 require('dotenv').config();
 
 const app = express();
