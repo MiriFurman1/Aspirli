@@ -6,7 +6,7 @@ import cors from 'cors'
 // import helmet from 'helmet'
 import errorHandler from './middleware/errorHandler'
 import connectToMongoDB from './config/db';
-import usersDB from './controllers/registerController'
+// import usersDB from './controllers/registerController'
 dotenv.config()
 
 
@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json())
 connectToMongoDB()
   .then(() => {
-    usersDB.setUsers();
+    // usersDB.setUsers();
   })
   .catch(error => {
     console.error('Error:', error.message);
