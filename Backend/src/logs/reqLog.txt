@@ -1,0 +1,4 @@
+20231214	14:08:55	303e5c5d-8dc8-4599-88a9-e5f663dd30f2	GET	undefined	/
+20231214	14:08:55	405eeecf-cd36-48a0-b83e-632851c403c4	GET	undefined	/css/style.css
+20231214	14:08:55	21d5cd9a-cd27-4ca8-a5ef-790e49de8047	GET	undefined	/favicon.ico
+20231214	15:27:23	17a306b1-4a65-485e-a665-0dffef76a7c0	POST	undefined	/register
