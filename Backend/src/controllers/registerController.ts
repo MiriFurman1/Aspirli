@@ -3,19 +3,7 @@ import path from "path";
 import bcrypt from 'bcrypt';
 import { Request, Response } from 'express';
 import User from "../models/user";
-// const usersDB = {
-//   users: [],
 
-//   setUsers: async function () {
-//     try {
-//       const collection = mongoose.connection.collection('users');
-//       const findUsers = collection.find({});
-//       const users = await findUsers.toArray();
-//     } catch (error) {
-//       console.error('Error retrieving users from MongoDB:', error);
-//     }
-//   }
-// };
 
 const handleNewUser = async (req: Request, res: Response): Promise<void> => {
   const { user, pwd } = req.body;

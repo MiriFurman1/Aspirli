@@ -2,3 +2,10 @@
 20231214	14:08:55	405eeecf-cd36-48a0-b83e-632851c403c4	GET	undefined	/css/style.css
 20231214	14:08:55	21d5cd9a-cd27-4ca8-a5ef-790e49de8047	GET	undefined	/favicon.ico
 20231214	15:27:23	17a306b1-4a65-485e-a665-0dffef76a7c0	POST	undefined	/register
+20231217	12:45:03	d1862b3e-fd07-4214-b72c-4a51ef57f53c	POST	undefined	/auth
+20231217	12:46:15	7533a148-6e35-45e1-b343-c495cf73bd9d	POST	undefined	/auth
+20231217	12:48:06	19a64edc-5602-402f-aa42-23989714246a	POST	undefined	/auth
+20231217	12:48:23	cac572d9-b68d-4ea2-b481-fb04c2e581d3	POST	undefined	/auth
+20231217	12:49:40	22fccd0e-9411-41e2-9df2-5f0a97202889	POST	undefined	/auth
+20231217	12:55:13	32831756-6143-4f28-9089-f7ab0e89f148	POST	undefined	/auth
+20231217	12:55:30	a2635e87-63ef-45f9-9120-abd8e3f692d4	POST	undefined	/register

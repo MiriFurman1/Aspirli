@@ -1,4 +1,4 @@
-import express from 'express';
+
 import { Router } from 'express';
 import handleNewUser from '../controllers/registerController';
 

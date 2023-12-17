@@ -9,6 +9,7 @@ import connectToMongoDB from './config/db';
 const { logger } = require('./middleware/logEvents');
 import rootRoutes from './routes/root';
 import registerRoutes from './routes/register';
+import authRoutes from './routes/auth'
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ connectToMongoDB()
 // routes
 app.use('/', rootRoutes);
 app.use('/register', registerRoutes);
+app.use('/auth', authRoutes);
 
 
 app.all('*', (req, res) => {
