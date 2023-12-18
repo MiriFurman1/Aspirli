@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-// const bcrypt = require('bcrypt');
+
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -11,6 +11,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  refreshToken:{
+    type:String
+  }
 });
 
 
