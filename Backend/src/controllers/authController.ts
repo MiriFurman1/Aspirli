@@ -50,13 +50,16 @@ const handleLogin = async (req: Request, res: Response): Promise<void> => {
         { expiresIn: "1d" }
       );
 
-      const otherUsers = await User.find({ username: { $ne: foundUser.username } });
-      const currentUser = { ...foundUser, refreshToken };
 
-      await User.updateOne(
+
+      const updatedUser=await User.findOneAndUpdate(
         { username: foundUser.username },
-        { $set: { ...foundUser, refreshToken } }
+        { refreshToken },
+        { new: true }
       );
+
+
+    //   console.log(updatedUser)
 
       res.json({ success: `User ${username} is logged in!` });
     } else {
