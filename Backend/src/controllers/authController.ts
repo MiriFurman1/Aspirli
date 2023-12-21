@@ -50,18 +50,18 @@ const handleLogin = async (req: Request, res: Response): Promise<void> => {
         { expiresIn: "1d" }
       );
 
-
-
-      const updatedUser=await User.findOneAndUpdate(
+      const updatedUser = await User.findOneAndUpdate(
         { username: foundUser.username },
         { refreshToken },
         { new: true }
       );
 
-
-    //   console.log(updatedUser)
-
-      res.json({ success: `User ${username} is logged in!` });
+      //   console.log(updatedUser)
+      res.cookie("jwt", refreshToken, {
+        httpOnly: true,
+        maxAge: 24 * 60 * 60 * 1000,
+      });
+      res.json({ accessToken });
     } else {
       res.sendStatus(401); // Unauthorized
     }

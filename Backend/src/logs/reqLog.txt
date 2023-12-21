@@ -20,3 +20,4 @@
 20231219	11:44:06	14ee9727-749d-4656-9dd4-91cb4fb2bd1c	POST	undefined	/auth
 20231219	11:44:25	c2b1af09-62ad-4473-8982-cf7d14f28652	POST	undefined	/auth
 20231219	11:45:29	2e6b9143-0d7e-47b0-9c2c-d5493318f583	POST	undefined	/auth
+20231219	13:38:41	2871d952-aed3-4f7c-b46f-8dd0f37eed4f	POST	undefined	/register
