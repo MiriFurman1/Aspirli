@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const verifyJWT = (req: Request, res: Response, next: NextFunction) => {
+const verifyJWT = (req:any, res: Response, next: NextFunction) => {
     const authHeader = req.headers['authorization'];
     if (!authHeader) return res.sendStatus(401);
     console.log(authHeader); // Bearer token
@@ -19,6 +19,7 @@ const verifyJWT = (req: Request, res: Response, next: NextFunction) => {
             next();
         }
     );
+    
 };
 
 export default verifyJWT;
