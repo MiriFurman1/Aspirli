@@ -16,16 +16,21 @@ import authRoutes from './routes/auth';
 import usersRoutes from './routes/users'
 import refreshRoutes from './routes/refresh'
 import logoutRoutes from './routes/logout'
+import credentials from './middleware/credentials';
+import corsOptions from './config/corsOptions';
+
 dotenv.config();
 
 const app = express();
-
+app.use(logger);
+app.use(credentials)
 // app.use(helmet());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser())
+
 app.use(express.urlencoded({ extended: false }));
-app.use(logger);
+
 app.use('/', express.static(path.join(__dirname, '/public')));
 
 connectToMongoDB()
