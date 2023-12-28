@@ -15,7 +15,7 @@ import registerRoutes from './routes/register';
 import authRoutes from './routes/auth';
 import usersRoutes from './routes/users'
 import refreshRoutes from './routes/refresh'
-
+import logoutRoutes from './routes/logout'
 dotenv.config();
 
 const app = express();
@@ -41,6 +41,7 @@ app.use('/', rootRoutes);
 app.use('/register', registerRoutes);
 app.use('/auth', authRoutes);
 app.use('/refresh', refreshRoutes)
+app.use('/logout',logoutRoutes)
 
 //routes that need auth
 app.use(verifyJWT);
