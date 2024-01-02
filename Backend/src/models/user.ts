@@ -13,7 +13,11 @@ const userSchema = new mongoose.Schema({
   },
   refreshToken:{
     type:String
-  }
+  },
+  roles: {
+    type:Object, 
+
+},
 });
 
 
