@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
   },
   roles: {
     type:Object, 
-
+    default: {"User":2001}
 },
 });
 
