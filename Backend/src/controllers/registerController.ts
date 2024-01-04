@@ -23,7 +23,9 @@ const handleNewUser = async (req: Request, res: Response): Promise<void> => {
 
     try {
         const hashedPwd = await bcrypt.hash(pwd, 10); //salt=10
-        const newUser = new User({ username: user, password: hashedPwd});
+        const newUser = new User({ "username": user,
+        "roles":roles,
+        "password": hashedPwd});
         await newUser.save();
 
         

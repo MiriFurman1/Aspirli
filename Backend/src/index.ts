@@ -2,12 +2,10 @@ import * as dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-// import helmet from 'helmet';
 import errorHandler from './middleware/errorHandler';
 import connectToMongoDB from './config/db';
 import verifyJWT from './middleware/verifyJWT';
 import cookieParser from 'cookie-parser'
-const PORT = process.env.PORT || 3000;
 
 import { logger } from './middleware/logEvents';
 import rootRoutes from './routes/root';
@@ -20,6 +18,7 @@ import credentials from './middleware/credentials';
 import corsOptions from './config/corsOptions';
 
 dotenv.config();
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(logger);
@@ -49,7 +48,7 @@ app.use('/refresh', refreshRoutes)
 app.use('/logout',logoutRoutes)
 
 //routes that need auth
-app.use(verifyJWT);
+// app.use(verifyJWT);
 app.use('/users', usersRoutes)
 
 app.all('*', (req, res) => {

@@ -90,3 +90,14 @@
 20240103	14:18:13	4f265a1c-1d9f-4a6a-a3fb-111d7a79a3c9	POST	undefined	/register
 20240103	14:18:55	0475e94c-a9d6-418d-a56c-6d355ee5a1c7	POST	undefined	/register
 20240103	16:30:05	496b618d-1db1-4834-9bee-dfa308721206	POST	undefined	/register
+20240104	17:06:10	8d16e193-8888-40f3-9814-91431a18e323	DELETE	undefined	/users
+20240104	17:06:33	8796405e-9145-4a4c-a73e-6a7d0b875b3f	DELETE	undefined	/users
+20240104	17:06:53	e130f930-0fb7-485c-998b-dbfeaf875698	DELETE	undefined	/users
+20240104	17:07:01	f14ccf5b-0815-4e09-8fcf-81dcafee079c	DELETE	undefined	/users
+20240104	17:11:48	f7aafcf9-9ee6-4851-9a09-68fa3368992a	POST	undefined	/auth
+20240104	17:12:01	556b1c06-7aa8-4313-b133-2cbd2917a4f0	DELETE	undefined	/users
+20240104	17:12:13	c5720dcf-5754-44f5-b7c5-f4ac8b970315	POST	undefined	/logout
+20240104	17:12:30	529c6301-4e72-4fc2-a56a-b6dbf012ffc3	POST	undefined	/auth
+20240104	17:12:47	b789abfc-5d5c-40d4-bac7-4587aee2ce7e	DELETE	undefined	/users
+20240104	17:14:57	a25e9110-08eb-4d80-816c-6d7738393e0e	POST	undefined	/auth
+20240104	17:15:14	af4652f2-6851-49c8-bb7e-ce85f376e1e8	DELETE	undefined	/users
