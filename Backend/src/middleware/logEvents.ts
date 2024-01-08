@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 import fs from 'fs';
 import fsPromises from 'fs/promises';
 import path from 'path';
+import { Request, Response, NextFunction } from 'express';
 
 const logEvents = async (message: string, logName: string): Promise<void> => {
     const dateTime = `${format(new Date(), 'yyyyMMdd\tHH:mm:ss')}`;
@@ -19,7 +20,7 @@ const logEvents = async (message: string, logName: string): Promise<void> => {
     }
 };
 
-const logger = (req, res, next) => {
+const logger = (req: Request, res: Response, next: NextFunction) => {
     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, 'reqLog.txt');
     console.log(`${req.method} ${req.path}`);
     next();
