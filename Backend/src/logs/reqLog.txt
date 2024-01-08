@@ -119,3 +119,9 @@
 20240108	12:54:50	20dc8e05-d620-4896-94e7-7dd3485347be	GET	undefined	/restricted-route
 20240108	12:55:09	7d20f2fc-9f05-4396-9d1b-4babe763ca04	POST	undefined	/auth
 20240108	12:55:33	1d809918-843b-45ba-bb8b-22a19c406e85	GET	undefined	/restricted-route
+20240108	16:54:29	edc31507-bf2b-42dc-a623-1caf22f9f186	OPTIONS	http://localhost:5173	/register
+20240108	17:20:35	e5554c81-610f-4559-8d67-90a68e8cf5f1	OPTIONS	http://localhost:5173	/register
+20240108	17:32:55	091afe1d-96c7-414b-bc68-68f04f37f6b8	OPTIONS	http://localhost:5173	/register
+20240108	17:33:23	1e79e3a6-3c89-40ba-855f-8786583f5998	OPTIONS	http://localhost:5173	/register
+20240108	17:34:13	d66ca138-1cc6-431f-bde8-8f2558f5d889	OPTIONS	http://localhost:5173	/register
+20240108	17:34:13	5094a711-2083-4485-b2d6-063d5e12d7fd	POST	http://localhost:5173	/register

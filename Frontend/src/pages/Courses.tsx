@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 
 const Courses = () => {
   const [expandedCategory, setExpandedCategory] = useState(null);
@@ -18,7 +17,7 @@ const Courses = () => {
     },
   ];
 
-  const handleCategoryClick = (index) => {
+  const handleCategoryClick = (index:number) => {
     setExpandedCategory(expandedCategory === index ? null : index);
   };
 
