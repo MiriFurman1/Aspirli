@@ -16,6 +16,8 @@ import refreshRoutes from './routes/refresh'
 import logoutRoutes from './routes/logout'
 import credentials from './middleware/credentials';
 import corsOptions from './config/corsOptions';
+import verifyRoles from './middleware/verifyRoles';
+import ROLES_LIST from './config/roles_list';
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
@@ -47,9 +49,16 @@ app.use('/auth', authRoutes);
 app.use('/refresh', refreshRoutes)
 app.use('/logout',logoutRoutes)
 
+
+
 //routes that need auth
-// app.use(verifyJWT);
+app.use(verifyJWT);
 app.use('/users', usersRoutes)
+
+app.get('/restricted-route', verifyRoles(ROLES_LIST.Admin), (req, res) => {
+  // If the middleware passes (user has the 'admin' role), this code will execute
+  res.status(200).send('You have access to this restricted route!');
+});
 
 app.all('*', (req, res) => {
   res.status(404);

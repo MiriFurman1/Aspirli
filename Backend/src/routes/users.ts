@@ -9,7 +9,7 @@ router.route('/')
     .get(usersController.getAllUsers)
     .post(usersController.createNewUser)
     .put(usersController.updateUser)
-    .delete(verifyRoles(ROLES_LIST.Admin),usersController.deleteUser);
+    .delete(usersController.deleteUser);
 
 router.route('/:id')
     .get(usersController.getUser);
